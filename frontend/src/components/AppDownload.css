@@ -1,0 +1,33 @@
+.app-download {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 50px 40px; gap: 24px;
+  margin: 20px 40px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  position: relative; overflow: hidden;
+}
+.app-download::before {
+  content: '';
+  position: absolute; top: -60%; right: -5%;
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.app-download::after {
+  content: '';
+  position: absolute; bottom: -50%; left: 5%;
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.app-download p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem; font-weight: 600;
+  color: var(--white); line-height: 1.6;
+  position: relative; z-index: 1;
+}
+.app-download-platforms { display: flex; gap: 16px; position: relative; z-index: 1; }
+.app-download-platforms img { height: 52px; cursor: pointer; transition: var(--transition); border-radius: var(--radius-sm); }
+.app-download-platforms img:hover { transform: translateY(-6px) scale(1.05); filter: brightness(1.1); }
+@media (max-width: 768px) { .app-download { padding: 30px 20px; margin: 12px; } .app-download p { font-size: 1.1rem; } .app-download-platforms img { height: 44px; } }

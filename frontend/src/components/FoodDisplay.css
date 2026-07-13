@@ -1,0 +1,5 @@
+.food-display { padding: 20px 40px; }
+.food-display h2 { font-size: 2rem; font-weight: 700; margin-bottom: 30px; letter-spacing: -0.5px; }
+.food-display-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 22px; }
+@media (max-width: 768px) { .food-display { padding: 20px; } .food-display-list { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+@media (max-width: 480px) { .food-display-list { grid-template-columns: 1fr; } }

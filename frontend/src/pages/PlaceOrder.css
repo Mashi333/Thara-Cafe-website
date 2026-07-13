@@ -1,0 +1,33 @@
+.place-order { display: flex; gap: 30px; padding: 30px 40px; justify-content: space-between; flex-wrap: wrap; }
+.place-order-left {
+  flex: 1.5; background: var(--card);
+  border-radius: var(--radius-md); padding: 36px;
+  border: 1px solid var(--border);
+}
+.place-order-left .title { font-size: 1.3rem; font-weight: 600; margin-bottom: 24px; }
+.place-order-left input {
+  width: 100%; padding: 14px 18px; margin-bottom: 14px;
+  background: var(--bg-3); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); font-size: 0.95rem;
+  font-family: 'DM Sans', sans-serif; color: var(--text);
+  outline: none; transition: var(--transition);
+}
+.place-order-left input::placeholder { color: var(--text-dim); }
+.place-order-left input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+.multi-field { display: flex; gap: 12px; }
+.multi-field input { flex: 1; }
+.place-order-right { flex: 1; max-width: 400px; }
+.place-order-right .cart-total {
+  background: var(--card);
+  border-radius: var(--radius-md); padding: 32px;
+  border: 1px solid var(--border);
+}
+.place-order-right .cart-total h2 { font-size: 1.4rem; margin-bottom: 20px; }
+.place-order-right .cart-total button {
+  width: 100%; margin-top: 20px; padding: 14px;
+  background: var(--gradient-1); color: var(--white);
+  border: none; border-radius: var(--radius-sm);
+  font-size: 1rem; font-weight: 600; transition: var(--transition);
+}
+.place-order-right .cart-total button:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(59,130,246,0.4); }
+@media (max-width: 768px) { .place-order { padding: 20px; } .place-order-right { max-width: 100%; } }

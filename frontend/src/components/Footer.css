@@ -1,0 +1,53 @@
+.footer {
+  background: var(--bg-2);
+  color: var(--text-muted);
+  margin-top: 60px;
+  padding: 60px 60px 25px;
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 200px; height: 1px;
+  background: var(--gradient-1);
+  box-shadow: 0 0 20px rgba(59,130,246,0.3);
+}
+.footer-content { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+.footer-content-left { flex: 1; min-width: 260px; }
+.footer-content-left h2 {
+  font-size: 1.8rem; font-weight: 800; margin-bottom: 16px;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.footer-content-left p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px; }
+.footer-social-icons { display: flex; gap: 10px; }
+.footer-social-icons img {
+  width: 38px; height: 38px; cursor: pointer;
+  filter: brightness(0) invert(0.7);
+  transition: var(--transition);
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+}
+.footer-social-icons img:hover { filter: brightness(0) invert(1); background: var(--bg-4); border-color: var(--border-glow); box-shadow: 0 0 15px rgba(59,130,246,0.2); }
+.footer-content-center, .footer-content-right { min-width: 180px; }
+.footer-content-center h2, .footer-content-right h2 {
+  font-size: 0.78rem; color: var(--white);
+  margin-bottom: 18px; text-transform: uppercase;
+  letter-spacing: 2px; font-weight: 600;
+}
+.footer-content-center ul, .footer-content-right ul { list-style: none; padding: 0; }
+.footer-content-center li, .footer-content-right li {
+  font-size: 0.9rem; margin-bottom: 12px; cursor: pointer;
+  transition: var(--transition);
+}
+.footer-content-center li:hover, .footer-content-right li:hover { color: var(--primary-light); padding-left: 6px; }
+.footer hr { border: none; border-top: 1px solid var(--border); margin: 35px 0 18px; }
+.footer-copyright { text-align: center; font-size: 0.82rem; color: var(--text-dim); }
+@media (max-width: 768px) { .footer { padding: 40px 20px 15px; } .footer-content { flex-direction: column; gap: 30px; } }
