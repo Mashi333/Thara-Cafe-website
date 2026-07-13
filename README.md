@@ -131,3 +131,14 @@ npm run dev:admin
 2. Get your test API keys from the Dashboard
 3. Add `STRIPE_SECRET_KEY` to `backend/.env`
 4. For the frontend, the Stripe checkout redirects are configured in the order route
+
+<p align="center">
+
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![Stripe](https://img.shields.io/badge/Payments-Stripe-635BFF?logo=stripe)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
+</p>
