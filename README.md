@@ -132,13 +132,8 @@ npm run dev:admin
 3. Add `STRIPE_SECRET_KEY` to `backend/.env`
 4. For the frontend, the Stripe checkout redirects are configured in the order route
 
-<p align="center">
-
-![React](https://img.shields.io/badge/React-19-blue?logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
-![Stripe](https://img.shields.io/badge/Payments-Stripe-635BFF?logo=stripe)
-![License](https://img.shields.io/badge/License-MIT-blue)
-
-</p>
+<img width="1360" height="628" alt="4" src="https://github.com/user-attachments/assets/3bb81e55-a617-41cb-a43a-0dc207a81c61" />
+<img width="1362" height="631" alt="3" src="https://github.com/user-attachments/assets/4ffd6c04-b541-4f39-b8dd-ce429b648372" />
+<img width="1361" height="635" alt="2" src="https://github.com/user-attachments/assets/b69ba2de-c9b7-4498-8fed-720dafee5b17" />
+<img width="1361" height="634" alt="1" src="https://github.com/user-attachments/assets/0149960b-63ae-4719-8b27-93beb3f6e664" />
+<img width="1359" height="635" alt="Screenshot 2026-07-13 210603" src="https://github.com/user-attachments/assets/8590aa95-2e42-4c7a-a5e9-0e1df0db31ae" />
